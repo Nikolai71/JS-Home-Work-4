@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arrRandom = [];
+        let summ = 0;
+        let three = 0;
+        for (let i = 0; i < 5; i++) {
+            arrRandom[i] = Math.floor(Math.random() * 10);
+            summ = summ + arrRandom[i];
+            if (arrRandom[i] === 3) {
+                three++;
+            }
+        }
+        console.log(`Массив [${arrRandom}]`);
+        console.log(`Сумма чисел: ${summ}`);
+        console.log(`Минимальное число: ${Math.min(...arrRandom)}`);
+        console.log(`В массие есть число 3 в количестве: ${three}`);
+    </script>
+
+</body>
+
+</html>
